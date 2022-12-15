@@ -24,6 +24,12 @@ data = pd.DataFrame(lines_strip)
 
 
 ## Split data at ","
+for i, r in data.iterrows():
+    str(r)
+    r.str.split(",")
+    print(r)
+
+print(data.head())
 
 ## Split on "-" 
 
